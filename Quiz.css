@@ -1,0 +1,106 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.floatLeft { float: left;}
+.floatRight {float: right; padding-top: 35px; }
+.container {width: 100%; overflow: hidden; margin: 0 auto; background-color: #FFFFFF;}
+.container a{text-align: center; font-size: 16px; text-decoration: none; padding-right: 40px; font-family: Roboto; background-color: #FFFFFF; color: black;}
+.container a:hover {overflow: hidden; background-color: black; color: #FFFFFF;}
+
+.content{text-align: center; font-weight: bold; color: white;}
+h1{font-size: 60px; letter-spacing: 2px; margin-bottom: 0;}
+h2{font-size: 20px;margin-top: 0;}
+.content img {padding-bottom: 0;}
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+.bodyQuiz {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  --hue: var(--hue-neutral);
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.quiz-container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.disable {pointer-events: none;}
+
+
+#Contact {text-align: center; background-color: black; color: white; }
+#Contact p{font-weight:bold; background-color: black; color: white;}
+#Contact a{font-weight:bold; background-color: black; color: white; text-decoration: none;}
+#Contact table.center{ margin-left: auto; margin-right: auto; background-color: black; color: white;}

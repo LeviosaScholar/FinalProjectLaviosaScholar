@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+    <meta charset="utf-8">
+    <title>FAQ IIUM Scholarship</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="FAQCSS.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+  </head>
+   <body>
+     <div class="container">
+               <nav>
+                 <div class="floatLeft">
+                   <a href="index.html"><img src="logo.jpeg" height ="60" width="100"></a>
+                 </div>
+                 <div class="floatRight">
+               <a href="index.html">Home</a>
+               <a href="#">FAQ</a>
+                <a href="Registration.html">Registration</a>
+                <a href="Submission.html">Submission</a>
+                <a href="CompanyList.html">Company List</a>
+                <a href="#Contact">Get in Touch</a>
+             </nav>
+         </div>
+       </div>
+
+
+      <h1>Frequently Asked Question</h1>
+      <div class="FAQ">
+
+     <!-- reference from https://jqueryui.com/accordion/ -->
+       <div id="accordion">
+    <!-- reference to create questions are inspired from http://www.yayasansimedarby.com/about-us/faq -->
+         <h3>Who is elligible to apply for scholarship?</h3>
+         <div id="answer">
+           <p>All undergraduate or postgraduate IIUM students are encouraged to apply if they fulfill the elligibility requirements. The students must maintain CGPA 3.50 and above in every semester in their studies and being active in co-curricular activities.</p>
+         </div>
+         <h3>How do I apply for scholarship?</h3>
+          <div id="answer">
+          <p>You can apply online scholarship by fill in the form in registration and submission pages. You need to submit your identification, profile picture, offer letter, certificate photos and  parents annual salary slip.</p>
+        </div>
+        <h3>What fields of programme does this scholarship website offers?</h3>
+         <div id="answer">
+          <p>This website offers different types of scholarship for various of field programmes for every Kulliyyah that exist in IIUM. We offer local scholarship for Malaysian students and international scholarship for our international students. We believe in preserving the rights to get excellent quality of education.</p>
+        </div>
+        <h3>When can I know the result of application status?</h3>
+         <div id="answer">
+          <p>You can know the result of aplication status 1 month after the application date closed. You will receive an email from your respective Kulliyyah of your application status.</p>
+        </div>
+        <h3>Can I resubmit my application again if previous application unsuccessful?</h3>
+         <div id="answer">
+          <p>Unfortunately IIUM Scholarship does not accept any applications resubmitted within the current semester. However, you may apply scholarship application again for next semester.</p>
+         </div>
+
+       </div>
+
+        <h2>Ask Your Question Here</h2>
+        <textarea id="message" rows="7" cols="90" placeholder="Please ask any question..."></textarea>
+        <button  name="button" id="submit">Submit</button>
+      </div>
+      <div id="Contact">
+    <h3 style="background-color: black; color: white;" ><a href="aboutus.html">About Us</a></h3>
+    <h3 style="background-color: black; color: white;">Contact Us</h3>
+    <p> <a href="https://goo.gl/maps/92zhGH1RwAGkoGXP8">Leviosa Scholar, <br> Kuala Lumpur, Malaysia</a></p>
+    <p> <a href="tel:123-456-7890">123-456-7890</a> </p>
+
+  <table class="center">
+    <tr>
+      <td><a href="https://www.instagram.com/"> <img src="ig.png" alt="Instagram" style="width: 25px; height: 25px;"> </a></td>
+      <td><a href="https://www.facebook.com/"> <img src="fb.png" alt="Facebook" style="width: 25px; height: 25px;"> </a></td>
+      <td><a href="https://www.twitter.com/"> <img src="twitter.png" alt="Twitter" style="width: 25px; height: 25px;"> </a></td>
+    </tr>
+  </table>
+
+  <p>&copy; 2020 LeviosaScholar.com</p>
+  </div>
+    <!-- reference from https://jqueryui.com/accordion/ -->
+    <script type="text/javascript">
+    $(function() {
+      $("#accordion").accordion({
+        "animate":true,
+        "collapsible":true,
+        "event":"click"});
+     });
+
+     document.querySelector('#submit').onclick = reconfirm;
+     function reconfirm() {
+       alert("Please reconfirm your question before submit");}
+
+  </script>
+
+  </body>
+</html>

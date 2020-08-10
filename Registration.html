@@ -1,0 +1,143 @@
+<?php include('register.php') ?>
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title></title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+<body>
+  <div class="container">
+            <nav>
+              <div class="floatLeft">
+                <a href="index.html"><img src="logo.jpeg" height ="60" width="100"></a>
+              </div>
+              <div class="floatRight">
+            <a href="index.html">Home</a>
+            <a href="FAQ.html">FAQ</a>
+             <a href=#>Registration</a>
+             <a href="Submission.html">Submission</a>
+             <a href="CompanyList.html">Company List</a>
+             <a href="#Contact">Get in Touch</a>
+          </nav>
+      </div>
+    </div>
+<br>
+    <div class="registrationform"><h1> Registration Form For the Scholarship<h1></div>
+      <div class="main">
+        <form><form method="post" action="register.php">
+         	<?php include('errors.php'); ?>
+          <div id="name">
+            <h2 class= "name">Full Name</h2>
+            <input class="firstname" type="text" name="first_name"><br>
+            <label class="firstlabel">First Name</label value="?php echo $email;?">
+            <input class="lastname" type="text" name="Last_name"><br>
+                <label class="lastlabel">Last Name</label value="?php echo $email;?">
+
+          </div>
+             <h2 class="name">Email Address</h2>
+             <input class="EmailAddress" type="text" name="EmailAddress">
+
+             <h2 class="name">Password</h2>
+             <input class="password"  type="password" name="Password" id="myPsw">
+             <h2 class="name">Confirm Password</h2>
+             <input class="password"  type="password" name="Password" id="myPsw">
+             <p id="demo"></p>
+
+             <script>
+             function myFunction() {
+               var x = document.getElementById("myPsw");
+               var defaultVal = x.defaultValue;
+               var currentVal = x.value;
+
+               if (defaultVal == currentVal) {
+                 document.getElementById("demo").innerHTML = "Default value and current value is the same: "
+                 + x.defaultValue + " and " + x.value
+                 + "<br>Change the value of the password field to see the difference!";
+               } else {
+                 document.getElementById("demo").innerHTML = "The default value was: " + defaultVal
+                 + "<br>The new, current value is: " + currentVal;
+               }
+             }
+            </script>
+
+
+
+
+             <h2 class="name">No.of IC/Passport</h2>
+             <input class="noofpassport" type="text" name="noofpassport">
+
+             <h2 class="name">Date of Birth (DOB)</h2>
+             <input class="Dateofbirth" type="text" name="Dateofbirth">
+
+
+             <h2 class="name">Phone-Number</h2>
+              <input class="code" type="text" name="area-code">
+
+             <input class="number" type="text" name="Phone">
+
+
+             <h2 class="name">Nationality</h2>
+             <input class="Nationality" type="text" name="area_code">
+
+             <h2 class="name" >Gender</h2>
+             <select class ="option" name ="Gender"><option></option>
+               <option disabled="disabled" selected="selected">--Select--</option>
+               <option> Male</option>
+               <option> Female</option>
+
+
+               <select class ="option" name ="Religion"><option></option>
+                <h2 class="name" >Religion</h2>
+                  <select class ="option" name ="Religion"><option></option>
+                    <option disabled="disabled" selected="selected">--Select--</option>
+                    <option> Islam </option>
+                    <option> Christianity</option>
+                     <option>other</option>
+
+
+                           <select class ="option" name ="Martial status"><option></option>
+                            <h2 class="name" >Martial status</h2>
+                              <select class ="option" name ="Religion"><option></option>
+                                <option disabled="disabled" selected="selected">--Select--</option>
+                                <option> Single </option>
+                                <option> Married</option>
+                                <option> other</option>
+
+                  <select class ="option" name ="Degree"><option></option>
+                          <h2 class="name" >Degree</h2>
+                     <select class ="option" name ="Degree"><option></option>
+             <option disabled="disabled" selected="selected">--Select--</option>
+                           <option> Foundation </option>
+                           <option> Diploma</option>
+                             <option> Bachelor</option>
+                              <option>Master</option>
+                               <option>PHD</option>
+
+               <select>
+
+                      </select>
+                      <button type= "submit">Register</button>
+                      </form>
+                      <div id="Contact">
+                  <h3 style="background-color: black; color: white;" ><a href="aboutus.html">About Us</a></h3>
+                  <h3 style="background-color: black; color: white;">Contact Us</h3>
+                  <p> <a href="https://goo.gl/maps/92zhGH1RwAGkoGXP8">Leviosa Scholar, <br> Kuala Lumpur, Malaysia</a></p>
+                  <p> <a href="tel:123-456-7890">123-456-7890</a> </p>
+
+                <table class="center">
+                  <tr>
+                    <td><a href="https://www.instagram.com/"> <img src="ig.png" alt="Instagram" style="width: 25px; height: 25px;"> </a></td>
+                    <td><a href="https://www.facebook.com/"> <img src="fb.png" alt="Facebook" style="width: 25px; height: 25px;"> </a></td>
+                    <td><a href="https://www.twitter.com/"> <img src="twitter.png" alt="Twitter" style="width: 25px; height: 25px;"> </a></td>
+                  </tr>
+                </table>
+
+                <p>&copy; 2020 LeviosaScholar.com</p>
+                </div>
+
+<body>
+
+  </html>
